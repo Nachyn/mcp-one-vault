@@ -1,0 +1,21 @@
+<Solution>
+    <Configurations>
+        <Platform Name="Any CPU"/>
+        <Platform Name="x64"/>
+        <Platform Name="x86"/>
+    </Configurations>
+    <Folder Name="/dotnet/">
+        <File Path="Directory.Build.props"/>
+        <File Path="Directory.Packages.props"/>
+    </Folder>
+    <Folder Name="/src/">
+        <Project Path="src/OneVault/OneVault.App/OneVault.App.csproj"/>
+        <Project Path="src/OneVault/OneVault.Grpc/OneVault.Grpc.csproj"/>
+        <Project Path="src/OneVault/OneVault.Infrastructure/OneVault.Infrastructure.csproj"/>
+        <Project Path="src/OneVault/OneVault/OneVault.csproj"/>
+    </Folder>
+    <Folder Name="/tests/">
+        <Project Path="tests/OneVault.Integration.Tests/OneVault.Integration.Tests.csproj"/>
+        <Project Path="tests/OneVault.UnitTests/OneVault.UnitTests.csproj"/>
+    </Folder>
+</Solution>

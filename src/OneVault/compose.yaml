@@ -2,6 +2,15 @@
   onevault:
     image: onevault
     build:
-      context: .
-      dockerfile: OneVault/Dockerfile
+      context: ../..
+      dockerfile: src/OneVault/OneVault/Dockerfile
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+    environment:
+      Kestrel__Endpoints__Http__Url: http://0.0.0.0:5000
+      Kestrel__Endpoints__Http__Protocols: Http1
+      # The container uses h2c behind a TLS-terminating proxy; no certificate is bundled.
+      Kestrel__Endpoints__Https__Url: http://0.0.0.0:5001
+      Kestrel__Endpoints__Https__Protocols: Http2
 

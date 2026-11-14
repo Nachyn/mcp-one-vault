@@ -1,0 +1,37 @@
+syntax = "proto3";
+package onevault.v1;
+option csharp_namespace = "OneVault.Grpc.Protos";
+import "google/api/annotations.proto";
+import "google/protobuf/timestamp.proto";
+
+service OneVaultService {
+  rpc CreateSecret(CreateSecretRequest) returns (CreateSecretResponse) {
+    option (google.api.http) = {
+      post: "/v1/secrets" body: "*"
+    };
+  }
+  rpc GetSecret(GetSecretRequest) returns (GetSecretResponse) {
+    option (google.api.http) = {
+      get: "/v1/secrets/{token}"
+    };
+  }
+}
+
+message CreateSecretRequest {
+  string text = 1;
+  int32 ttl_seconds = 2;
+}
+
+message CreateSecretResponse {
+  string token = 1;
+  google.protobuf.Timestamp expires_at = 2;
+}
+
+message GetSecretRequest { 
+  string token = 1;
+}
+
+message GetSecretResponse {
+  string text = 1;
+  google.protobuf.Timestamp expires_at = 2;
+}
