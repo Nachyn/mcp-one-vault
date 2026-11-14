@@ -1,0 +1,7 @@
+﻿services:
+  onevault:
+    image: onevault
+    build:
+      context: .
+      dockerfile: OneVault/Dockerfile
+
