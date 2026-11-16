@@ -23,15 +23,12 @@ public static class Registrar
             await next(context);
         });
 
-        if (app.Environment.IsDevelopment())
+        app.UseSwagger();
+        app.UseSwaggerUI(options =>
         {
-            app.UseSwagger();
-            app.UseSwaggerUI(options =>
-            {
-                options.SwaggerEndpoint("/swagger/v1/swagger.json", "OneVault v1");
-                options.DocumentTitle = "OneVault API";
-            });
-        }
+            options.SwaggerEndpoint("/swagger/v1/swagger.json", "OneVault v1");
+            options.DocumentTitle = "OneVault API";
+        });
 
         return app;
     }

@@ -11,6 +11,7 @@
         <PackageReference Include="AutoFixture"/>
         <PackageReference Include="AutoFixture.Xunit2"/>
         <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing"/>
+        <PackageReference Include="ModelContextProtocol"/>
         <ProjectReference Include="../../src/OneVault/OneVault/OneVault.csproj"/>
         <Using Include="Xunit"/>
         <Using Include="FluentAssertions"/>

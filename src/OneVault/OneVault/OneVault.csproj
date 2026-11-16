@@ -4,6 +4,7 @@
     <ProjectReference Include="../OneVault.App/OneVault.App.csproj" />
     <ProjectReference Include="../OneVault.Infrastructure/OneVault.Infrastructure.csproj" />
     <ProjectReference Include="../OneVault.Grpc/OneVault.Grpc.csproj" />
+    <ProjectReference Include="../OneVault.Mcp/OneVault.Mcp.csproj" />
     <PackageReference Include="Swashbuckle.AspNetCore" />
   </ItemGroup>
 </Project>

@@ -12,6 +12,7 @@
         <Project Path="src/OneVault/OneVault.App/OneVault.App.csproj"/>
         <Project Path="src/OneVault/OneVault.Grpc/OneVault.Grpc.csproj"/>
         <Project Path="src/OneVault/OneVault.Infrastructure/OneVault.Infrastructure.csproj"/>
+        <Project Path="src/OneVault/OneVault.Mcp/OneVault.Mcp.csproj"/>
         <Project Path="src/OneVault/OneVault/OneVault.csproj"/>
     </Folder>
     <Folder Name="/tests/">

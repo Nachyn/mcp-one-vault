@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <PackageReference Include="ModelContextProtocol.AspNetCore"/>
+        <ProjectReference Include="../OneVault.App/OneVault.App.csproj"/>
+    </ItemGroup>
+</Project>
