@@ -1,0 +1,20 @@
+{
+  "name": "onevault-local",
+  "interface": {
+    "displayName": "OneVault Local"
+  },
+  "plugins": [
+    {
+      "name": "onevault",
+      "source": {
+        "source": "local",
+        "path": "./plugins/onevault"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

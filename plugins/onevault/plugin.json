@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "onevault",
+  "version": "1.0.0",
+  "description": "Create and retrieve temporary encrypted secrets with OneVault."
+}
